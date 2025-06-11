@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+        <div class="controls">
+            <input type="text" id="location-input" placeholder="Search location..." list="suggestions">
+            <datalist id="suggestions"></datalist>
+            <button id="locate-btn">Use My Location</button>
+            <div class="toggles">
+                <label><input type="checkbox" id="unit-toggle"> °F</label>
+                <label><input type="checkbox" id="time-toggle"> 12h</label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="alerts"></section>
+        <section id="current" class="grid"></section>
+        <section id="forecast"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
